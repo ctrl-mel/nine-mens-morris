@@ -594,7 +594,7 @@ public class UIGame extends JFrame {
 								
 								if(game.getCurrentGamePhase() != Game.PLACING_PHASE && game.isTheGameOver()) {
 									Token opp = (game.getPlayer().getPlayerToken() == Token.PLAYER_1 ? Token.PLAYER_2 : Token.PLAYER_1);
-									Log.info("Game Over! "+opp+" won!");
+									Log.info("Game Over! "+opp+" wonx!");
 									gameIsOver = true;
 									winner = (opp == Token.PLAYER_1) ? "p1" : "p2";
 									gClient.stop();
@@ -846,7 +846,7 @@ public class UIGame extends JFrame {
 					}
 					waitingForAI = false;
 					if(game.getCurrentGamePhase() != Game.PLACING_PHASE && game.isTheGameOver()) {
-						Log.info("Game Over! "+p.getPlayerToken()+" won");
+						Log.info("Game Over! "+p.getPlayerToken()+" wonx");
 						gameIsOver = true;
 						winner = (p.getPlayerToken() == Token.PLAYER_1) ? "p1" : "p2";
 					} else {
@@ -1022,7 +1022,7 @@ public class UIGame extends JFrame {
 								millWasMade = true;
 							} else {
 								if(game.getCurrentGamePhase() != Game.PLACING_PHASE && game.isTheGameOver()) {
-									Log.info("Game Over! "+player.getPlayerToken()+" won");
+									Log.info("Game Over! "+player.getPlayerToken()+" wonx");
 									gameIsOver = true;
 									winner = (player.getPlayerToken() == Token.PLAYER_1) ? "p1" : "p2";
 								}
@@ -1103,7 +1103,7 @@ public class UIGame extends JFrame {
 												boardPositions[i] = Token.NO_PLAYER; 
 												millWasMade = false;
 												if(game.getCurrentGamePhase() != Game.PLACING_PHASE && game.isTheGameOver()) {
-													Log.info("Game Over! "+p.getPlayerToken()+" won");
+													Log.info("Game Over! "+p.getPlayerToken()+" wonx");
 													gameIsOver = true;
 													winner = (p.getPlayerToken() == Token.PLAYER_1) ? "p1" : "p2";
 												}
